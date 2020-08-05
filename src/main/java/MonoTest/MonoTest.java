@@ -49,7 +49,10 @@ public class MonoTest {
 
     @Test
     public void monoConsumer () {
-        Mono.error(new IndexOutOfBoundsException())
-                .subscribe(i -> log.info("{}", i), e -> log.error(String.valueOf(e)));
+        Mono.error(new RuntimeException("fake a mistake"))
+                .subscribe(info -> log.info("info： {}", info), // 参数1, 接受内容
+                        err -> log.error("error: {}", err.getMessage()),  // 参数2， 对err处理的lambda函数
+                        () -> log.info("Done"),   // 参数3, 完成subscribe之后执行的lambda函数u
+                        sub -> sub.request(1));  // 参数4, Subscription操作, 设定从源头获取元素的个数
     }
 }
