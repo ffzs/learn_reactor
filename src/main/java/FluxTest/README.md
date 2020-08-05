@@ -4,7 +4,7 @@
 
 ## 创建Flux
 
-上一篇介绍了Mono，mono表示0~1的序列，flux用来表示0~N个元素序列，mono是flux的简化版，flux可以用来表示流
+上一篇介绍了Mono，mono表示0-1的序列，flux用来表示0-N个元素序列，mono是flux的简化版，flux可以用来表示流
 
 因为是表示连续序列Flux和Mono的创建方法，有些不同，下面是flux的一些创建方法：
 
