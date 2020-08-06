@@ -67,7 +67,7 @@ public void onErrorResume () {
 
 ![image-20200806134851231](README.assets/image-20200806134851231.png)
 
-### onErrorReturn使用
+### onErrorContinue使用
 
 ![image-20200806134933763](README.assets/image-20200806134933763.png)
 
@@ -126,4 +126,4 @@ public void onErrorMap () {
 
 
 
-代码
+[代码](https://github.com/ffzs/learn_reactor/tree/master/src/main/java/OnErrorTest)
