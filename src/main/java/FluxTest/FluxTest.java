@@ -3,7 +3,6 @@ package FluxTest;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
 
 import java.time.Duration;
 import java.util.Arrays;
@@ -30,7 +29,7 @@ public class FluxTest {
         strMerge.subscribe(log::info);
         intFluxMerged.subscribe(i -> log.info("{}", i));
         // 通过interval创建流数据
-        Flux.interval(Duration.ofMillis(100)).map(String::valueOf)
+        Flux.interval(Duration.ofMillis(100)).cast(String.class)
                 .subscribe(log::info);
         Thread.sleep(2000);
     }
