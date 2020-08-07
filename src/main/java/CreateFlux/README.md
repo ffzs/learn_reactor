@@ -1,4 +1,4 @@
-# Reactor 3 （7）: 通过create()、generate()生成publisher
+# Reactor 3 （8）: 通过create()、generate()生成publisher
 
 之前文章也介绍过了Mono和Flux的静态创建方法，这里有两种方法能够更加随意的生成Mono或是Flux：
 
@@ -83,4 +83,4 @@ public void createFlux() {
 
 
 
-代码
+[代码](https://github.com/ffzs/learn_reactor/tree/master/src/main/java/CreateFlux)
