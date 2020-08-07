@@ -72,7 +72,7 @@ public class IOTest {
                 .log();
 
         flux.subscribe(new BaseSubscriber<String>() {
-            BufferedWriter bw = Files.newBufferedWriter(Paths.get("newInfo.txt"));
+            private final BufferedWriter bw = Files.newBufferedWriter(Paths.get("newInfo.txt"));
             private int count = 0;
             @SneakyThrows
             @Override
