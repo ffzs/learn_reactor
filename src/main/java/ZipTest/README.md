@@ -1,4 +1,4 @@
-# Reactor 3 （11）: 数据压缩zip、zipWith
+# Reactor 3 （12）: 数据压缩zip、zipWith
 
 处理业务的时候一定有这样的需求：将多个源数据压缩成一个，Reactor提供了zip和zipWith方法可以做到这一点。
 
@@ -112,4 +112,7 @@ public void zipWithTest () {
 
 ## 代码
 
-github
+[github](https://github.com/ffzs/learn_reactor/tree/master/src/main/java/ZipTest)
+
+[gitee](https://gitee.com/ffzs/learn_reactor/tree/master/src/main/java/ZipTest)
+
