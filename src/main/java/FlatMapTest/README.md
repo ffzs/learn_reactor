@@ -1,4 +1,4 @@
-# Reactor 3 （10）: 数据扁平处理flatMap、concatMap
+# Reactor 3 （11）: 数据扁平处理flatMap、concatMap
 
 
 
@@ -90,7 +90,7 @@ public class FlatMapTest {
 
 ## 代码：
 
-github
+[github](https://github.com/ffzs/learn_reactor/tree/master/src/main/java/FlatMapTest)
 
-gitee
+[gitee](https://gitee.com/ffzs/learn_reactor/tree/master/src/main/java/FlatMapTest)
 
